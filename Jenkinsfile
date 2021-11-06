@@ -14,6 +14,9 @@ pipeline {
         '''
     }
   }
+  triggers {
+    eventTrigger jmespathQuery("source=='homemade'")
+    }
   stages {
     stage('webhook stage1') {
         	  steps {
