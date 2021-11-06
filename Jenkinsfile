@@ -15,7 +15,7 @@ pipeline {
     }
   }
   stages {
-    stage('webhook stage') {
+    stage('webhook stage1') {
         	  steps {
             script {
             echo "Build triggered by:" + currentBuild.getBuildCauses()[0].toString()
